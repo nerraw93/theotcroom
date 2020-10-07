@@ -1,0 +1,168 @@
+.modal-dialog {
+    min-width: 669px;
+
+    .modal-content {
+        padding: 92px 92px 31px;
+        border-radius: 7px;
+        border: none;
+
+        a, a:visited, a:hover {
+            color: #59A5F3;
+            font-family: "Roboto Medium";
+
+            &:disabled {
+                color: #bababa;
+            }
+        }
+
+        .modal-header {
+            border: none;
+
+            .header-info {
+                margin-top: 15px;
+                margin-left: -20px;
+
+                h6 {
+                    font-size: 24px;
+                    margin-bottom: 3px !important;
+                    color: black;
+                }
+
+                p {
+                    font-size: 18px;
+                    color: #919AA3;
+                }
+            }
+
+            .modal-title {
+                .logo {
+                    margin-right: 37px;
+
+                    img {
+                        width: 95%;
+                    }
+                }
+            }
+        }
+
+        .modal-body {
+            //margin-top: 55px;
+            //margin-bottom: 35px;
+
+            input {
+                border-bottom: 1px solid #EDEDED;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                box-shadow: none;
+                color: #919AA3;
+                font-size: 16px;
+            }
+
+            .form-group {
+                margin-bottom: 3rem;
+            }
+
+            .agreement span {
+                color: #919AA3;
+                font-size: 16px;
+            }
+        }
+
+        .modal-footer {
+            button {
+                padding: 8px 25px;
+                width: auto;
+            }
+
+            .buttons {
+                margin-bottom: 54px;
+                font-size: 14px;
+            }
+
+            .btn-white, .btn-blue {
+                font-size: 14px;
+            }
+
+            .btn-white {
+                width: 228px;
+            }
+
+            .links {
+                font-size: 12px;
+            }
+
+            border: none;
+        }
+
+
+    }
+}
+
+.modal.confirm {
+    .modal-header {
+        background-color: #593196;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+    .modal-content {
+        padding: unset;
+    }
+
+    .modal-body {
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+.login-modal,
+.register-modal {
+    .modal-body {
+        margin-top: 55px;
+        margin-bottom: 35px;
+    }
+}
+
+.login-modal,
+.register-modal {
+    .btn-blue {
+        width: 167px !important;
+    }
+}
+
+.confirm-modal {
+    padding: 15px;
+
+    h3 {
+        font-size: 24px;
+        margin-top: 73px;
+    }
+
+    p {
+        color: #919AA3;
+        font-size: 16px;
+        margin-top: 46px;
+    }
+}
+
+.forgot-password-modal {
+    .btn-blue {
+        width: 228px !important;
+    }
+
+    .modal-body {
+        margin-top: 125px;
+        margin-bottom: 95px;
+    }
+}
+
+.chat-modal {
+    .modal-content {
+        padding: 40px;
+
+        .chat {
+            margin: 0 !important;
+        }
+    }
+}

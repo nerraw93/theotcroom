@@ -1,0 +1,169 @@
+// @import "../theme.scss";
+// @import "../vars.scss";
+
+.card {
+    padding: 15px;
+}
+
+h1 {
+    color: #171C34;
+}
+
+.search-input {
+    h1 {
+        font-size: 45px;
+        margin-top: 86px;
+    }
+
+    input {
+        background: transparent;
+        border: 0;
+        font-size: 45px;
+        color: #B9B9B9;
+        text-align: center;
+        margin-top: 89px;
+        margin-bottom: 108px;
+        border-bottom: 3px solid #EDEDED;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.search-input::after {
+    display: inline-block;
+    content: "";
+    background: url("/search.svg") no-repeat;
+    width: 44.87px;
+    height: 44.87px;
+    background-size: contain;
+    margin-bottom: -10px;
+}
+
+.btn-secondary {
+    background: #eee;
+    border-color: #aaa;
+}
+
+.table-row {
+    font-size: 13px;
+}
+
+.table-link, .table-link:visited {
+    color: #5E82F6;
+    font-family: "Roboto Medium";
+}
+
+.table-currency {
+    color: #E29000
+}
+
+.table-normal {
+    color: #171C34;
+}
+
+.table-title {
+    margin-bottom: 53px;
+    font-size: 34px;
+}
+
+.ReactTable {
+    border: none;
+
+    .-header {
+        background: #fafafa;
+        height: 95px !important;
+        line-height: 95px !important;
+        font-size: 18px !important;
+        font-weight: bold;
+
+        .rt-resizable-header-content {
+            padding-top: 29px;
+        }
+    }
+
+    .rt-tbody {
+        overflow: hidden !important;
+
+        .rt-td {
+            text-align: center;
+        }
+    }
+
+    .rt-th, .rt-td, .rt-tr-group {
+        border: none !important;
+    }
+
+    .rt-tr-group {
+        height: 55px !important;
+        text-align: left;
+        margin-bottom: 35px;
+
+        .rt-tr {
+            line-height: 55px !important;
+        }
+    }
+
+    .table-row {
+        font-size: 16px;
+    }
+
+    .rt-thead {
+        box-shadow: none !important;
+    }
+}
+
+.statistics {
+    margin: 0 0 191px 0;
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .media {
+        height: 129px;
+        padding-top: 34px;
+        padding-left: 67px;
+        text-align: left;
+
+        .img {
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            height: 64px;
+            width: 64px;
+            margin-right: 34px;
+            line-height: 60px;
+        }
+
+        h5 {
+            font-family: "Roboto Bold";
+            font-size: 24px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+
+        .home-buy-orders {
+            background: #9B51E0;
+        }
+
+        .home-sell-orders {
+            background: #F2994A;
+        }
+
+        .home-ongoing-deals {
+            background: #BB6BD9
+        }
+
+        .home-completed-deals {
+            background: #f2c94c;
+        }
+
+        .total-users {
+            background: #9013fe;
+        }
+    }
+}

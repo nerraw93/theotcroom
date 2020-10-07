@@ -1,0 +1,24 @@
+$max: 10;
+$offset: 0.5;
+$unit: 'rem'; // Feel free to change the unit.
+@mixin spacing($className, $styleName) {
+    $i: 0;
+    $counter: 0;
+    @while $i <= $max {
+        #{$className + $counter} {
+            #{$styleName}: #{$i + $unit} !important;
+        }
+        $i: $i + $offset;
+        $counter: $counter + 1;
+    }
+}
+
+// Font size
+@include spacing('.text-size-', 'font-size');
+
+// Padding
+@include spacing('.padleft-', 'padding-left');
+@include spacing('.padright-', 'padding-right');
+@include spacing('.padtop-', 'padding-top');
+@include spacing('.padbottom-', 'padding-bottom');
+@include spacing('.pad-', 'padding');

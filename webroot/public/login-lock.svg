@@ -1,0 +1,27 @@
+<svg width="83" height="83" viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d)">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M41.5 71C58.897 71 73 56.897 73 39.5C73 22.103 58.897 8 41.5 8C24.103 8 10 22.103 10 39.5C10 56.897 24.103 71 41.5 71Z" fill="#E29000"/>
+    </g>
+    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="34" y="27" width="16" height="21">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M42 43C43.1 43 44 42.1 44 41C44 39.9 43.1 39 42 39C40.9 39 40 39.9 40 41C40 42.1 40.9 43 42 43ZM48 34H47V32C47 29.24 44.76 27 42 27C39.24 27 37 29.24 37 32V34H36C34.9 34 34 34.9 34 36V46C34 47.1 34.9 48 36 48H48C49.1 48 50 47.1 50 46V36C50 34.9 49.1 34 48 34ZM38.9 32C38.9 30.29 40.29 28.9 42 28.9C43.71 28.9 45.1 30.29 45.1 32V34H38.9V32ZM48 46H36V36H48V46Z" fill="white"/>
+    </mask>
+    <g mask="url(#mask0)">
+        <rect x="17" y="13" width="50" height="50" fill="white"/>
+        <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="17" y="13" width="50" height="50">
+            <rect x="17" y="13" width="50" height="50" fill="white"/>
+        </mask>
+        <g mask="url(#mask1)">
+        </g>
+    </g>
+    <defs>
+        <filter id="filter0_d" x="0" y="0" width="83" height="83" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="5"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+        </filter>
+    </defs>
+</svg>

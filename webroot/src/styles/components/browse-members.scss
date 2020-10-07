@@ -1,0 +1,83 @@
+#browse-members {
+  margin-top: 60px;
+  padding-left: 55px;
+
+  .session-block {
+    padding-top: 46px;
+  }
+
+  .tabs-wrapper {
+    .tabs {
+      padding-bottom: 28px;
+
+      a {
+        padding-bottom: 28px;
+
+        &.selected {
+          border-bottom: 3px solid #BD10E0;
+        }
+      }
+    }
+  }
+
+  .ReactTable {
+    .-header {
+      display: none;
+    }
+
+    .rt-table {
+      margin-left: 36px;
+    }
+
+    .rt-tr-group {
+      margin-bottom: 50px;
+    }
+
+    .rt-tbody {
+      .image {
+        width: 64px;
+        height: 64px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-right: 17px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .rt-tr {
+        line-height: inherit !important;
+      }
+
+      .name {
+        line-height: 55px;
+        .user-name {
+          color: #171c34;
+          font-size: 16px;
+        }
+      }
+
+      small {
+        color: #919aa3;
+        font-size: 12px;
+      }
+
+      p {
+        color: #171c34;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .switch-member {
+      .switch {
+          background-color: #d9534f !important;
+
+          &.on {
+              background-color: #9B51E0 !important;
+          }
+      }
+  }
+
+}

@@ -1,0 +1,165 @@
+#new-ico {
+    margin-top: 52px;
+    padding: 63px;
+
+    .form-header {
+        margin-bottom: 62px;
+
+        h3 {
+            line-height: 75px;
+            margin-left: 30px;
+        }
+    }
+
+    .form-block {
+        margin-bottom: 62px;
+        padding-left: 20px;
+
+        h4 {
+            margin-bottom: 34px;
+
+            &.session-title {
+                font-family: "Roboto Bold";
+                font-size: 20px;
+            }
+        }
+
+        button {
+            &.inactive {
+                background: #e8ebed;
+                color: #798d99;
+                box-shadow: 3px 3px 10px #eee;
+
+                &:hover {
+                    background: #cfd3d5;
+                    color: #fff;
+                }
+            }
+        }
+
+        label {
+            color: #171C34;
+            font-size: 16px;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+
+        input, textarea {
+            border-radius: 4px;
+            border: 1px solid #efefef;
+            color: #919AA3;
+            padding-left: 20px;
+            font-size: 16px;
+        }
+
+        input {
+            height: 47px;
+        }
+
+        .inner-block {
+            margin-bottom: 35px;
+
+            .form-group {
+                margin-bottom: 0;
+            }
+
+            .input-group-text {
+                background: #ffffff;
+                height: 47px;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                border: 1px solid #efefef;
+                color: #919AA3;
+                font-size: 16px;
+
+                &.bg-blue {
+                    background: #5e82f6;
+                    color: white;
+                    border: 1px solid #5e82f6;
+                }
+            }
+
+            &:first-child {
+                margin-bottom: 58px;
+            }
+
+            .radio-group {
+                padding-left: 30px;
+
+                .radio {
+                    position: relative;
+                    margin-bottom: 25px;
+
+                    input {
+                        visibility: hidden;
+                        height: 0;
+                    }
+
+                    .radio-label {
+                        color: #171C34;
+                        font-size: 16px;
+                        margin-left: 28px;
+
+                        &::before {
+                            content: "\A0\A0\A0\A0\A0";
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 50%;
+                            position: absolute;
+                            left: 0;
+                            top: 6px;
+                            border: 1px solid #919AA3;
+                            cursor: pointer;
+                        }
+
+                        &.checked {
+                            &::before {
+                                border: 4px solid #FFF;
+                                background: #5E82F6;
+                                border-radius: 50%;
+                                box-shadow: 0 0 0.5px 3px #5E82F6;
+                                height: 23px;
+                                width: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .datepicker-container {
+                width: 100%;
+                position: relative;
+
+                .input-group-append {
+                    width: auto;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+
+        }
+    }
+
+    .right-col {
+        padding-top: 20px !important;
+    }
+
+    .footer {
+        button {
+            margin-top: 60px;
+        }
+    }
+}
+
+.datepicker-container {
+    width: 100%;
+    position: relative;
+
+    .input-group-append {
+        width: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

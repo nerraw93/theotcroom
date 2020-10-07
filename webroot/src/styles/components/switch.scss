@@ -1,0 +1,14 @@
+.switch-member {
+    margin-top: 300px;
+
+    .switch {
+        background-color: #d9534f !important;
+
+        &.on {
+            &.allowed {
+                background-color: #9B51E0 !important;
+            }
+            background-color: #9B51E0 !important;
+        }
+    }
+}

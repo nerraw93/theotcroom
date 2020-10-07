@@ -1,0 +1,71 @@
+/**
+/// App Global components for the app.
+**/
+
+.dropdown {
+    .dropdown-menu {
+        .dropdown-item {
+            &:hover {
+                cursor: pointer;
+                // color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+    .dropdown-item {
+        &:hover {
+            cursor: pointer;
+            // color: #FFFFFF;
+        }
+    }
+}
+
+.btn {
+    &.btn-sm {
+        padding: 0.25rem 0.5rem !important;
+        font-size: 0.765625rem !important;
+        line-height: 1.5 !important;
+        border-radius: 0 !important;
+        height: unset;
+    }
+
+    &.btn-width-auto {
+        width: unset;
+    }
+}
+
+.ReactTable.-highlight .rt-tbody .rt-tr:not(.-padRow) {
+    &:hover {
+        background-color: #e3d8f3 !important;
+        cursor: pointer;
+    }
+}
+
+.notification {
+    .btn {
+        background-color: transparent;
+        color: #171C34;
+
+        &:hover, &:focus, &:active, &:focus-within {
+            outline: none;
+            border: none;
+            color: #404040;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .badge {
+            position: absolute;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 50%;
+            top: 4px;
+            right: 13px;
+            padding-bottom: 4px;
+            padding-top: 4px;
+        }
+    }
+}

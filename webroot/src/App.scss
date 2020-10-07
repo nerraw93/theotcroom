@@ -1,0 +1,362 @@
+@import "./styles/vars.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "../node_modules/react-toggle-switch/dist/css/switch.min.css";
+
+// vars
+@import "./styles/vars.scss";
+@import "./styles/mixins.scss";
+@import "./styles/components/header.scss";
+@import "./styles/components/home.scss";
+@import "./styles/components/ico.scss";
+@import "./styles/components/my-account.scss";
+@import "./styles/components/settings.scss";
+@import "./styles/components/edit-profile.scss";
+@import "./styles/components/details.scss";
+@import "./styles/components/dashboard.scss";
+@import "./styles/components/browse-members.scss";
+@import "./styles/components/loading.scss";
+@import "./styles/components/loading2.scss";
+@import "./styles/components/footer.scss";
+@import "./styles/components/modal.scss";
+@import "./styles/components/user-dashboard.scss";
+@import "./styles/tailwind_utilities.scss";
+@import "./styles/utilities.scss";
+@import "./styles/components.scss";
+
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("./styles/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("./styles/fonts/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("./styles/fonts/Roboto/Roboto-Bold.ttf");
+}
+
+#root {
+    font-family: "Roboto Regular";
+}
+
+#main {
+    padding: 0;
+
+    .alert {
+        position: fixed;
+        right: 25px;
+        top: 25px;
+        z-index: 999999;
+    }
+
+    .react-datepicker-wrapper,
+    .react-datepicker__input-container {
+        width: 100%;
+    }
+}
+
+input {
+    border-bottom: 1px solid #EDEDED;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+    color: #919AA3;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 3rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 50px;
+    line-height: 35px;
+    width: 150.3px;
+    font-family: "Roboto Medium";
+    color: white;
+
+    &:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    &:disabled {
+        background: #b4b4b4;
+        color: #FFF;
+        cursor: not-allowed;
+    }
+}
+
+.btn-white {
+    background: white;
+    color: #919AA3;
+
+    &:hover {
+        background: white;
+        color: #919AA3;
+    }
+
+    &:disabled {
+        background: white;
+        color: #ccdae5;
+    }
+}
+
+.btn-blue {
+    background: #5e82f6;
+
+    &:hover {
+        background: #7e9bf8;
+    }
+}
+
+.btn-royal-blue {
+    background: #1751c2;
+
+    &:hover {
+        background: #17449d;
+    }
+}
+
+.btn-orange {
+    background: #f5a623;
+
+    &:hover {
+        background: #ca8322;
+    }
+}
+
+.btn-gray {
+    background: #979797;
+
+    &:hover {
+        background: #818181;
+    }
+}
+
+.session-block {
+    box-shadow: 1px 1px 5px 5px #f8f8f8;
+    border-radius: 10px;
+}
+
+.tabs-wrapper {
+    padding-left: 15px;
+    margin-bottom: 60px;
+
+    h4 {
+        font-family: "Roboto Bold";
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #919aa3;
+    }
+
+    .tabs {
+        margin-top: 45px;
+        padding-bottom: 19px;
+        border-bottom: 1px solid #d8d8d8;
+
+        span {
+            margin-left: 26px;
+            margin-right: 26px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        a {
+            color: #919AA3;
+            font-size: 20px;
+            padding-bottom: 20px;
+            cursor: pointer;
+
+            &.selected {
+                color: #171c34;
+                border-bottom: 5px solid #5E82F6;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+.btn {
+    .btn-xs {
+        padding: 1px 5px;
+        font-size: 12px;
+        line-height: 1.5;
+        border-radius: 3px;
+    }
+}
+
+
+
+// @media (min-width: 576px) {
+//   body {
+//     max-width: fit-content;
+//     width: fit-content;
+//   }
+//
+//   .container {
+//     max-width: fit-content;
+//   }
+// }
+//
+// @media (min-width: 768px) {
+//   .container {
+//     max-width: fit-content;
+//   }
+// }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+
+    #main.container {
+        padding: 15px;
+
+        .search-input {
+            input {
+                font-size: 2rem;
+            }
+            &:after {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+
+    footer {
+        &.page-footer {
+            height: auto;
+
+            .footer-logo {
+                text-align: center !important;
+                padding: 15px;
+                line-height: 0px;
+            }
+
+            .footer-details {
+                line-height: 0px;
+            }
+
+            .social-media-links {
+                text-align: center !important;
+                line-height: 0px;
+                padding-top: 20px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    #main.container {
+        .search-input {
+            input {
+                font-size: 1.5rem;
+            }
+            &:after {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    #main.container {
+        .search-input {
+            input {
+                font-size: 2rem;
+            }
+            &:after {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+
+    footer {
+        &.page-footer {
+            height: auto;
+
+            .social-media-links {
+                text-align: center !important;
+                // line-height: 0px;
+                // margin-top: -15px;
+                // margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #main.container {
+        max-width: fit-content;
+    }
+
+    footer {
+        &.page-footer {
+            height: auto;
+
+            .social-media-links {
+              text-align: center !important;
+              line-height: 125px;
+              margin-top: 0px;
+              margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    #main.container {
+        max-width: fit-content;
+    }
+}
+
+.content-container {
+  margin-top: 87px;
+}
+
+.dashboard-container {
+  padding-left: 114px;
+  padding-right: 114px;
+}
+
+.container-app {
+    margin-left: 6rem;
+    margin-right: 6rem;
+
+    .app-row {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+}

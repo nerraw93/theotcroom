@@ -1,0 +1,48 @@
+.settings-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  
+  h2, h3, h4 {
+    color: #171C34;
+  }
+
+  .inner-block {
+
+    .inner-block-subtitle {
+      h4 {
+        color: #171c34;
+        font-family: "Roboto Bold";
+      }
+
+      p {
+        color: #919aa3;
+      }
+    }
+  }
+
+  .inner-block-body {
+    padding-left: 15px;
+
+    input {
+      color: #919aa3;
+      margin-bottom: 15px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 167px;
+    }
+  }
+
+  .tabs-wrapper {
+    margin-bottom: 30px;
+    padding-left: 15px;
+
+    .tabs {
+      margin-top: 30px;
+    }
+  }
+}
