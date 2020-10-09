@@ -1,6 +1,6 @@
 import { persistConfig } from "../config/app";
 import { createStore } from "redux";
-import { persistCombineReducers, persistStore } from "redux-persist";
+import { persistCombineReducers } from "redux-persist";
 import reducers from "../actions/reducers";
 
 export default class StoreAccessor {

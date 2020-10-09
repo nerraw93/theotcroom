@@ -42,7 +42,7 @@ class LoginModal extends BaseModal {
   };
 
   handleKeyPress = (e) => {
-     if (e.charCode == 13) {
+     if (e.charCode === 13) {
          this.onSubmit(e);
      }
   };
@@ -63,7 +63,7 @@ class LoginModal extends BaseModal {
     return (
       <div className="row">
         <div className="logo p-0">
-          <img src="/login-lock.svg" width="75px"/>
+          <img src="/login-lock.svg" width="75px" alt=""/>
         </div>
         <div className="col-lg-9 header-info p-0">
           <h6>Welcome to OTC Room</h6>
@@ -74,7 +74,7 @@ class LoginModal extends BaseModal {
   };
 
   renderBody = () => {
-    const { email, password, isLoading } = this.state;
+    const { email, password } = this.state;
 
     return (
       <div className="col-11 m-auto p-0">
@@ -118,10 +118,10 @@ class LoginModal extends BaseModal {
         <div className="col-12 p-0 links">
           <div className="row">
             <div className="col text-left">
-              <span className="text-muted">Don't have an account? <a href="#" disabled={isLoading} onClick={this._handleOpenRegisterModal}>CREATE HERE</a></span>
+              <span className="text-muted">Don't have an account? <a href="#/" disabled={isLoading} onClick={this._handleOpenRegisterModal}>CREATE HERE</a></span>
             </div>
             <div className="col text-right">
-              <a href="#" disabled={isLoading} onClick={this._handleOpenForgotPasswordModal}>FORGOT PASSWORD</a>
+              <a href="#/" disabled={isLoading} onClick={this._handleOpenForgotPasswordModal}>FORGOT PASSWORD</a>
             </div>
           </div>
         </div>

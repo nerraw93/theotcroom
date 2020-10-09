@@ -59,7 +59,7 @@ export default class DetailsModal extends Component {
             bio,
             telegram_username,
             website,
-            youtube_video,
+            // youtube_video,
             facebook_profile,
             linkedin_profile,
             twitter_profile,
@@ -148,8 +148,8 @@ export default class DetailsModal extends Component {
     }
 
     render() {
-        const { isShow, close } = this.props;
-        let { user } = this.state;
+        const { isShow } = this.props;
+        // let { user } = this.state;
 
         return (
             <Modal className="modal confirm" visible={isShow}>

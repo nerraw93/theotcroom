@@ -22,7 +22,7 @@ export default class Details extends Component {
     }
 
     componentDidMount() {
-        const { ico, isGuest } = this.props;
+        const { isGuest } = this.props;
 
         if (isGuest) {
             this.setState({ isLoading: false })
@@ -134,7 +134,7 @@ export default class Details extends Component {
     render() {
 
         const { ico } = this.props;
-        const { isLoading } = this.state;
+        // const { isLoading } = this.state;
 
         return (
             <div className="deal-info col-lg-8">

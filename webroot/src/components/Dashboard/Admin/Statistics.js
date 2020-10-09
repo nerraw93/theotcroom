@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import _ from "lodash";
+// import _ from "lodash";
 import Loading2 from "../../common/Loading2";
 import cx from "classnames";
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 export default class Statistics extends Component {
     _isMounted = false;
@@ -57,7 +57,7 @@ export default class Statistics extends Component {
                         ? <Loading2/>
                         : <div className="media">
                             <div className={cx("img text-center", image)}>
-                                <img src={`/${image}.svg`}/>
+                                <img src={`/${image}.svg`} alt=""/>
                             </div>
                             <div className="media-body">
                                 <h5 className="mt-0">{value}</h5>

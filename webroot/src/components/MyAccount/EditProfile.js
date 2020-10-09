@@ -27,7 +27,7 @@ class EditProfile extends Component {
     }
 
     componentWillMount() {
-        const { myself, users } = this.props;
+        const { myself } = this.props;
         let {email} = myself;
 
         if (isUndefined(email)) {
@@ -68,7 +68,7 @@ class EditProfile extends Component {
 
         data.append("photo", files[0]);
         uploadPhoto(data).then(({ type, payload }) => {
-            if (type == 'auth:upload_photo_success') {
+            if (type === 'auth:upload_photo_success') {
                 let {photo} = payload;
                 this.setState({ profile_picture: photo });
                 me();
@@ -123,7 +123,7 @@ class EditProfile extends Component {
                 <div className="row p-0">
                     <div className="col-lg-3 image text-center">
                         <div className="wrapper m-auto">
-                            <img src={profile_picture || "/no-user-image.jpg"} className="w-100"/>
+                            <img src={profile_picture || "/no-user-image.jpg"} className="w-100" alt=""/>
                         </div>
                         <button className="btn btn-blue"
                             onClick={this._openPhotoSelector}

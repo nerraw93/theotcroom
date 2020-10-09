@@ -1,7 +1,7 @@
 import React from "react";
 import BaseModal from '../common/BaseModal';
 import Input from '../common/Input';
-import { showFlashMessage } from "../../actions/app";
+// import { showFlashMessage } from "../../actions/app";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class ForgotPasswordModal extends BaseModal {
@@ -48,7 +48,7 @@ class ForgotPasswordModal extends BaseModal {
         return (
             <div className="row">
                 <div className="logo p-0">
-                    <img src="/forgot-password.svg" width="75px"/>
+                    <img src="/forgot-password.svg" width="75px" alt=""/>
                 </div>
                 <div className="col-lg-9 header-info p-0">
                     <h6>Forgot Password</h6>

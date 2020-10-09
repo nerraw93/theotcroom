@@ -1,6 +1,6 @@
-import React, {Component} from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import { isNull } from 'lodash';
+// import { isNull } from 'lodash';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 /**

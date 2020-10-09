@@ -19,7 +19,7 @@ export default class ChatModal extends BaseModal {
     };
 
     componentDidUpdate(prevProps){
-        if(prevProps.buyer != this.props.buyer) {
+        if(prevProps.buyer !== this.props.buyer) {
             this._fetchComments()
         }
     }
@@ -33,7 +33,7 @@ export default class ChatModal extends BaseModal {
         return <div key={id} className="message row p-0">
             <div className="col-lg-2">
                 <div className="image">
-                    <img src={user.profile_picture || "/no-user-image.jpg"} className="w-100"/>
+                    <img src={user.profile_picture || "/no-user-image.jpg"} className="w-100" alt=""/>
                 </div>
             </div>
             <div className="col-lg-7 balloon receiving">
@@ -105,7 +105,7 @@ export default class ChatModal extends BaseModal {
      */
     _onSubmit = (e) => {
         const { message, isCommenting } = this.state;
-        const { reservationId, ico, getReservationComments } = this.props;
+        const { reservationId, ico } = this.props;
 
         e.preventDefault();
         this.setState({ isCommenting:true })
@@ -124,7 +124,7 @@ export default class ChatModal extends BaseModal {
     };
 
     _fetchComments() {
-        const { reservationId, ico, myself } = this.props;
+        const { reservationId, ico } = this.props;
 
         // Get comments
         window.http.get(`order/${ico.uuid}/${reservationId}/comments`)
@@ -138,7 +138,7 @@ export default class ChatModal extends BaseModal {
 
     renderFooter = () => {
         const { message, isCommenting } = this.state;
-        const { sendMessage } = this.props;
+        // const { sendMessage } = this.props;
 
         return (
             <div className="chat col-12 text-right buttons p-0">

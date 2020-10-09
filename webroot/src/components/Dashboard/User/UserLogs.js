@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Loading2 from "../../common/Loading2";
+// import Loading2 from "../../common/Loading2";
 import Tabs from "../../common/Tabs";
 import ViewNotes from "../Modals/ViewNotes";
 import AddNote from "../Modals/AddNote";
@@ -44,7 +44,7 @@ class UserLogs extends Component {
         <div className="row">
           <div className="col-2 date text-left">{month} <br /><span>{day}</span></div>
           <div className="col-4 message">
-            {this.getOrderDescription(order.type, order.currency)} <br /><a href="#">{order.name}</a>
+            {this.getOrderDescription(order.type, order.currency)} <br /><a href="#/">{order.name}</a>
           </div>
           <div className="col-4 details text-right">
               + {order.currency} {order.selling_price_token}

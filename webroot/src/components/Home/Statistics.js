@@ -15,7 +15,7 @@ class Statistics extends Component {
                 <div className="session-block">
                   <div className="media">
                     <div className="img text-center home-buy-orders">
-                      <img src="./home-buy-orders.svg"/>
+                      <img src="./home-buy-orders.svg" alt=""/>
                     </div>
                     <div className="media-body">
                       <h5 className="mt-0">{buy}</h5>
@@ -29,7 +29,7 @@ class Statistics extends Component {
                 <div className="session-block">
                   <div className="media">
                     <div className="img text-center home-sell-orders">
-                      <img src="./home-sell-orders.svg"/>
+                      <img src="./home-sell-orders.svg" alt=""/>
                     </div>
                     <div className="media-body">
                       <h5 className="mt-0">{sell}</h5>
@@ -43,7 +43,7 @@ class Statistics extends Component {
                 <div className="session-block">
                   <div className="media">
                     <div className="img text-center home-ongoing-deals">
-                      <img src="./home-ongoing-deals.svg"/>
+                      <img src="./home-ongoing-deals.svg" alt=""/>
                     </div>
                     <div className="media-body">
                       <h5 className="mt-0">{ongoing}</h5>
@@ -57,7 +57,7 @@ class Statistics extends Component {
                 <div className="session-block">
                   <div className="media">
                     <div className="img text-center home-completed-deals">
-                      <img src="./home-completed-deals.svg"/>
+                      <img src="./home-completed-deals.svg" alt=""/>
                     </div>
                     <div className="media-body">
                       <h5 className="mt-0">{completed}</h5>

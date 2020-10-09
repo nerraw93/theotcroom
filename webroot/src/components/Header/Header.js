@@ -74,7 +74,7 @@ class Header extends Component {
             <nav className="navbar navbar-expand-md navbar-light">
                 <div className="container">
                     <NavLink to="/" className="navbar-brand">
-                        <img src="/logo.svg" width="98px" />
+                        <img src="/logo.svg" width="98px" alt=""/>
                     </NavLink>
                     <div className="collapse navbar-collapse">
                         <ul className="navbar-nav mr-auto">

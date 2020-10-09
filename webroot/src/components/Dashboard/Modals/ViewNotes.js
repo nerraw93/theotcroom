@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Modal from "react-bootstrap4-modal";
-import cx from "classnames";
-import Loading2 from "../../common/Loading2";
+// import cx from "classnames";
+// import Loading2 from "../../common/Loading2";
 
 class ViewNotes extends Component {
 
@@ -51,7 +51,7 @@ class ViewNotes extends Component {
     };
 
     renderFooter = () => {
-        const {order} = this.state;
+        // const {order} = this.state;
 
         return (
             <div className="chat col-12 text-right buttons p-0">
@@ -68,7 +68,7 @@ class ViewNotes extends Component {
     }
 
         render() {
-            const { show, className } = this.state;
+            const { show } = this.state;
             return (
                 <Modal className="modal" visible={show}>
                     <div className="modal-header col-lg-12 p-0">

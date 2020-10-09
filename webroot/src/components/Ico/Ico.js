@@ -111,7 +111,7 @@ class Ico extends Component {
                 <div className="col-12 p-0">
                     <div className="row form-header">
                         <div className="logo p-0">
-                            <img src="/new-ico-order.svg" width="75px"/>
+                            <img src="/new-ico-order.svg" width="75px" alt=""/>
                         </div>
                         <div className="col-lg-9 p-0">
                             <h3>Post on ICO Order</h3>

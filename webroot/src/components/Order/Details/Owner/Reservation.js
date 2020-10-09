@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import cx from "classnames";
 import PropTypes from "prop-types";
 import { timeFromNow } from "../../../../modules/Utilities";
@@ -8,7 +8,7 @@ export function Reservation({reservation, comments, openChatModal, acceptReserva
     let hasComments = comments.length > 0 ? true : false;
     let lastComment = comments[comments.length - 1]
     let statusElement;
-    if (status == 'ongoing') {
+    if (status === 'ongoing') {
         statusElement = <div className="btn-group w-100">
             <button type="button" className="btn btn-info dropdown-toggle w-100 btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 ACTION
@@ -18,7 +18,7 @@ export function Reservation({reservation, comments, openChatModal, acceptReserva
                 <li className="dropdown-item text-danger" onClick={() => denyReservation(reservation)}>DENY</li>
             </div>
         </div>
-    } else if (status == 'accepted') {
+    } else if (status === 'accepted') {
         statusElement = <div className="btn-group w-100">
             <button type="button" className="btn btn-info dropdown-toggle w-100 btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 ACCEPTED
@@ -28,9 +28,9 @@ export function Reservation({reservation, comments, openChatModal, acceptReserva
                 <li className="dropdown-item text-danger" onClick={() => denyReservation(reservation)}>DENY</li>
             </div>
         </div>
-    } else if (status == 'denied') {
+    } else if (status === 'denied') {
         statusElement = <div className="w-100 text-capitalize text-danger font-weight-bold">denied</div>
-    } else if (status == 'completed') {
+    } else if (status === 'completed') {
         statusElement = <div className="w-100 text-capitalize text-primary font-weight-bold">complete</div>
     }
 
@@ -39,7 +39,7 @@ export function Reservation({reservation, comments, openChatModal, acceptReserva
         <div className={`user-message col-lg-12 ${status}`}>
             <div className="media">
                 <div className="image align-self-center mr-3">
-                    <img src={users.profile_picture || "/no-user-image.jpg"} className="w-100"/>
+                    <img src={users.profile_picture || "/no-user-image.jpg"} className="w-100" alt=""/>
                 </div>
                 <div className={cx("media-body", !hasComments && "mt-4")}>
                     <div>

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactDOM, { unmountComponentAtNode } from 'react-dom';
 
 export default class Notifier

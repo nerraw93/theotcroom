@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { getNotifications, getNotif } from "../../actions/notification";
+// import { getNotifications, getNotif } from "../../actions/notification";
 
 export default class Notification extends Component {
 
@@ -20,10 +20,10 @@ export default class Notification extends Component {
     _renderNotifications(notification, index) {
         const { category } = notification
         let icon, message
-        if (category == 2) {
+        if (category === 2) {
             icon = 'comments'
             message = 'You have one reply.'
-        } else if (category == 3) {
+        } else if (category === 3) {
             icon = 'thumbtack'
             message = "You have new reservation."
         } else {
@@ -44,7 +44,7 @@ export default class Notification extends Component {
             return false;
         }
 
-        const { token, myself } = auth;
+        const { myself } = auth;
         if (myself) {
             if (myself.id !== undefined && !this._isListening) {
                 this._isListening = true;
@@ -59,9 +59,9 @@ export default class Notification extends Component {
                     {unread.length > 0 ? <span className="badge badge-pill badge-warning">{unread.length}</span> : ''}
                 </button>
                 <div className="dropdown-menu">
-                    {all.length == 0  ? <a className="dropdown-item">Nothing here.</a> : all.map(this._renderNotifications)}
+                    {all.length === 0  ? <a className="dropdown-item">Nothing here.</a> : all.map(this._renderNotifications)}
                     <div className="dropdown-divider"></div>
-                    <a className="dropdown-item text-center" href="#">Show All</a>
+                    <a className="dropdown-item text-center" href="#/">Show All</a>
                 </div>
             </div>
         )

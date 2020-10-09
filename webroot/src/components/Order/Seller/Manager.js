@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import ConfirmDialog from "../../common/ConfirmDialog";
 
 export default class Manager extends Component {

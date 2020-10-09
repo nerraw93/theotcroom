@@ -4,7 +4,7 @@ import HideOrderModal from "./HideOrderModal";
 import Loading2 from "../common/Loading2";
 import ReactTable from "react-table";
 import moment from "moment";
-import _ from "lodash";
+// import _ from "lodash";
 
 class Browse extends Component {
     constructor(props) {
@@ -47,16 +47,16 @@ class Browse extends Component {
     }
 
     render() {
-        if (isLoading) {
-            return <Loading2/>
-        }
-
         const { tab, orders, isLoading } = this.state;
 
         const { toggleIcoHideShow } = this.props;
         const tabs = [
             { display_name: `All Orders`, name: "all_orders" },
         ];
+
+        if (isLoading) {
+            return <Loading2/>
+        }
 
         var btnXs = {
             padding: '1px 5px',

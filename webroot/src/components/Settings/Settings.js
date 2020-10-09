@@ -44,7 +44,7 @@ class Settings extends Component {
         <div className="row">
           <div className="col-12">
             <div className="header-with-icon">
-              <img src="/bank-account.svg"/>
+              <img src="/bank-account.svg" alt=""/>
               <span className="title">Wallet/Bank</span>
             </div>
 
@@ -71,7 +71,7 @@ class Settings extends Component {
         <div className="row">
           <div className="col-12">
             <div className="header-with-icon">
-              <img src="/login-lock.svg"/>
+              <img src="/login-lock.svg" alt=""/>
               <span className="title">Password</span>
             </div>
 

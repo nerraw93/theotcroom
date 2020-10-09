@@ -22,7 +22,7 @@ export default class Comment extends Component {
     }
 
     _fetchComments() {
-        const { reservation, ico, myself, match: { params } } = this.props;
+        const { reservation, ico } = this.props;
 
         // Get comments
         window.http.get(`order/${ico.uuid}/${reservation.id}/comments`)
@@ -84,7 +84,7 @@ export default class Comment extends Component {
         return <div key={id} className="message row p-0">
             <div className="col-lg-2">
                 <div className="image">
-                    <img src={picture || "/no-user-image.jpg"} className="w-100"/>
+                    <img src={picture || "/no-user-image.jpg"} className="w-100" alt=""/>
                 </div>
             </div>
             <div className="col-lg-10 balloon receiving">

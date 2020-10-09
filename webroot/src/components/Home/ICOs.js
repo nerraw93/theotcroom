@@ -27,8 +27,8 @@ class ICOs extends Component {
         let buy = [];
 
         if (!isEmpty(ads)) {
-            sell = filter(ads, (ad) => ad.type == 'sell');
-            buy = filter(ads, (ad) => ad.type == 'buy');
+            sell = filter(ads, (ad) => ad.type === 'sell');
+            buy = filter(ads, (ad) => ad.type === 'buy');
         }
 
         return { sell, buy };
@@ -68,7 +68,7 @@ class ICOs extends Component {
         }, {
             id: "seller",
             Header: "Seller",
-            accessor: a => <a href="#" className="table-row table-link">{a.user.first_name} {a.user.last_name}</a>,
+            accessor: a => <a href="#/" className="table-row table-link">{a.user.first_name} {a.user.last_name}</a>,
         }];
 
         const columnsBuy = [{
@@ -90,7 +90,7 @@ class ICOs extends Component {
         }, {
             id: "buyer",
             Header: "Buyer",
-            accessor: a => <a href="#" className="table-row table-link">{a.user.first_name} {a.user.last_name}</a>,
+            accessor: a => <a href="#/" className="table-row table-link">{a.user.first_name} {a.user.last_name}</a>,
         }];
 
         return(

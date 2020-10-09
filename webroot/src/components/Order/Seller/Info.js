@@ -28,28 +28,28 @@ export default class Info extends Component {
             {
                 seller.facebook_profile && <div className="col-lg-3 col-md-6 col-sm-12">
                 <a href={seller.facebook_profile} target="_blank">
-                <img src="/facebook.svg" />
+                <img src="/facebook.svg" alt=""/>
                 </a>
                 </div>
             }
             {
                 seller.telegram_username && <div className="col-lg-3 col-md-6 col-sm-12">
                 <a href={seller.telegram_username} target="_blank">
-                <img src="/telegram.svg" />
+                <img src="/telegram.svg" alt=""/>
                 </a>
                 </div>
             }
             {
                 seller.twitter_profile && <div className="col-lg-3 col-md-6 col-sm-12">
                 <a href={seller.twitter_profile} target="_blank">
-                <img src="/twitter.svg" />
+                <img src="/twitter.svg" alt=""/>
                 </a>
                 </div>
             }
             {
                 seller.email && <div className="col-lg-3 col-md-6 col-sm-12">
                 <a href={`mailto:${seller.email}`}>
-                <img src="/email.svg" />
+                <img src="/email.svg" alt=""/>
                 </a>
                 </div>
             }

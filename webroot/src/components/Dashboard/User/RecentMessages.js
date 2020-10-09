@@ -27,7 +27,7 @@ class RecentMessages extends Component {
           <div className="text-center messages-container">
             <div className="row message">
               <div className="col-3">
-                <img src="/no-user-image.jpg" className="rounded-circle" />
+                <img src="/no-user-image.jpg" className="rounded-circle" alt=""/>
               </div>
               <div className="col-9 details">
                 <div className="message-header text-left">User Name <span>3 min ago</span></div>
@@ -38,7 +38,7 @@ class RecentMessages extends Component {
             </div>
             <div className="row message">
               <div className="col-3">
-                <img src="/no-user-image.jpg" className="rounded-circle" />
+                <img src="/no-user-image.jpg" className="rounded-circle" alt=""/>
               </div>
               <div className="col-9 details">
                 <div className="message-header text-left">User Name <span>3 min ago</span></div>
@@ -49,7 +49,7 @@ class RecentMessages extends Component {
             </div>
             <div className="row message">
               <div className="col-3">
-                <img src="/no-user-image.jpg" className="rounded-circle" />
+                <img src="/no-user-image.jpg" className="rounded-circle" alt=""/>
               </div>
               <div className="col-9 details">
                 <div className="message-header text-left">User Name <span>3 min ago</span></div>
@@ -60,7 +60,7 @@ class RecentMessages extends Component {
             </div>
             <div className="row message">
               <div className="col-3">
-                <img src="/no-user-image.jpg" className="rounded-circle" />
+                <img src="/no-user-image.jpg" className="rounded-circle" alt=""/>
               </div>
               <div className="col-9 details">
                 <div className="message-header text-left">User Name <span>3 min ago</span></div>
@@ -71,7 +71,7 @@ class RecentMessages extends Component {
             </div>
             <div className="row message">
               <div className="col-3">
-                <img src="/no-user-image.jpg" className="rounded-circle" />
+                <img src="/no-user-image.jpg" className="rounded-circle" alt=""/>
               </div>
               <div className="col-9 details">
                 <div className="message-header text-left">User Name <span>3 min ago</span></div>
@@ -82,7 +82,7 @@ class RecentMessages extends Component {
             </div>
             <div className="row message">
               <div className="col-3">
-                <img src="/no-user-image.jpg" className="rounded-circle" />
+                <img src="/no-user-image.jpg" className="rounded-circle" alt=""/>
               </div>
               <div className="col-9 details">
                 <div className="message-header text-left">User Name <span>3 min ago</span></div>
@@ -94,7 +94,7 @@ class RecentMessages extends Component {
           </div>
           <div className="box-header-border-bottom-footer"></div>
           <div className="box-footer">
-            <a href="#">VIEW ALL CONVERSATION</a>
+            <a href="#/">VIEW ALL CONVERSATION</a>
           </div>
         </div>
       </div>

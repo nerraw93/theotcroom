@@ -46,7 +46,7 @@ export default class RegisterModal extends BaseModal {
         return (
             <div className="row">
                 <div className="logo p-0">
-                    <img src="/register.svg" width="75px"/>
+                    <img src="/register.svg" width="75px" alt=""/>
                 </div>
                 <div className="col-lg-9 header-info p-0">
                     <h6>Register to OTC Room</h6>
@@ -101,7 +101,7 @@ export default class RegisterModal extends BaseModal {
                     />
                 <div className="form-group agreement">
                     <div className="col">
-                        <span>By clicking the button below you agree to the OTC <a href="#">Terms and Condition</a></span>
+                        <span>By clicking the button below you agree to the OTC <a href="#/">Terms and Condition</a></span>
                     </div>
                 </div>
             </div>

@@ -173,13 +173,13 @@ export default class Orders extends Component {
                 <div className="col-12 p-0 mt-5">
                     <ul className="app-nav nav">
                         <li className="nav-item" onClick={() => this._filterOrders('all')}>
-                            <span className={`nav-link ${type == 'all' ? 'active' : ''}`}>All Orders</span>
+                            <span className={`nav-link ${type === 'all' ? 'active' : ''}`}>All Orders</span>
                         </li>
                         <li className="nav-item" onClick={() => this._filterOrders('sell')}>
-                            <span className={`nav-link ${type == 'sell' ? 'active' : ''}`}>Sell Orders</span>
+                            <span className={`nav-link ${type === 'sell' ? 'active' : ''}`}>Sell Orders</span>
                         </li>
                         <li className="nav-item" onClick={() => this._filterOrders('buy')}>
-                            <span className={`nav-link ${type == 'buy' ? 'active' : ''}`}>Buy Orders</span>
+                            <span className={`nav-link ${type === 'buy' ? 'active' : ''}`}>Buy Orders</span>
                         </li>
                     </ul>
                 </div>

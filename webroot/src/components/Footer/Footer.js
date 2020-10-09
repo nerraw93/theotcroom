@@ -10,7 +10,7 @@ class Footer extends Component {
           <div className="row">
             <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-left footer-logo">
               <NavLink to="/">
-                <img src="/logo.svg" width="86px" />
+                <img src="/logo.svg" width="86px" alt=""/>
               </NavLink>
             </div>
 
@@ -33,18 +33,18 @@ class Footer extends Component {
             <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-right social-media-links">
               <ul className="list-unstyled list-inline mb-0">
                 <li className="list-inline-item">
-                  <a href="#">
-                    <img src="/telegram.svg" width="24px" />
+                  <a href="#/">
+                    <img src="/telegram.svg" width="24px" alt=""/>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="#">
-                    <img src="/twitter.svg" width="24px" />
+                  <a href="#/">
+                    <img src="/twitter.svg" width="24px" alt=""/>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="#">
-                    <img src="/email.svg" width="24px" />
+                  <a href="#/">
+                    <img src="/email.svg" width="24px" alt=""/>
                   </a>
                 </li>
               </ul>

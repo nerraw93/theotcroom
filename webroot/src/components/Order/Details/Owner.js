@@ -61,7 +61,7 @@ export default class Owner extends Component {
         } else {
             return userReservations.map((reservation) => {
                 // Get user comments
-                let userComments = filter(comments, (comment) => comment.reservation_id == reservation.id)
+                let userComments = filter(comments, (comment) => comment.reservation_id === reservation.id)
 
                 return <Reservation key={reservation.id}
                     reservation={reservation} comments={userComments}
@@ -138,14 +138,14 @@ export default class Owner extends Component {
     };
 
     render() {
-        const { comments, conversations, buyer, replyToReservationId, reservationAction } = this.state;
+        const { conversations, buyer, replyToReservationId, reservationAction } = this.state;
         const { myself, ico } = this.props;
         let reservationType = '';
-        if (reservationAction.type == 'deny')
+        if (reservationAction.type === 'deny')
             reservationType = 'danger';
-        else if (reservationAction.type == 'accept')
+        else if (reservationAction.type === 'accept')
             reservationType = 'info';
-        else if (reservationAction.type == 'complete')
+        else if (reservationAction.type === 'complete')
             reservationType = 'primary';
         return (
             <div className="col-lg-12">

@@ -61,8 +61,8 @@ class MyAccount extends Component {
               <div className="col-lg-3 p-0 about-image">
                 {
                   myself.profile_picture
-                    ? <img src={myself.profile_picture} className="w-100"/>
-                    : <img src="./no-user-image.svg"/>
+                    ? <img src={myself.profile_picture} className="w-100"alt=""/>
+                    : <img src="./no-user-image.svg"alt=""/>
                 }
               </div>
               <div className="col-lg-7 p-0">
@@ -72,13 +72,13 @@ class MyAccount extends Component {
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 about-contact">
               <div>
-                <img src="./email.svg" /> <span>E-mail Address</span>
+                <img src="./email.svg" alt=""/> <span>E-mail Address</span>
                 <p>{myself.email}</p>
               </div>
               <br />
               <br />
               <div>
-                <img src="./company.svg" /> <span>Company</span>
+                <img src="./company.svg" alt=""/> <span>Company</span>
                 <p>Lorem Ipsum</p>
               </div>
             </div>
@@ -91,22 +91,22 @@ class MyAccount extends Component {
               <div className="row p-0 d-flex align-items-center">
                 <h3 className="title w-100">External Links</h3>
                 <div className="link w-100">
-                  <div className="image text-center float-left"><img src="./computer.svg" /></div>
-                  {myself.website && this._renderWebsite(myself.website) || <span className="small text-muted">No website</span>}
+                  <div className="image text-center float-left"><img src="./computer.svg" alt=""/></div>
+                  {(myself.website && this._renderWebsite(myself.website)) || <span className="small text-muted">No website</span>}
                 </div>
 
                 <div className="link w-100">
-                  <div className="image text-center float-left"><img src="./facebook.svg" /></div>
+                  <div className="image text-center float-left"><img src="./facebook.svg" alt=""/></div>
                   {(myself.facebook_profile && this._renderSocialMedia(myself.facebook_profile)) || <span className="small text-muted">No Facebook</span>}
                 </div>
 
                 <div className="link w-100">
-                  <div className="image text-center float-left"><img src="./twitter.svg" /></div>
+                  <div className="image text-center float-left"><img src="./twitter.svg" alt=""/></div>
                   {(myself.twitter_profile && this._renderSocialMedia(myself.twitter_profile)) || <span className="small text-muted">No Twitter</span>}
                 </div>
 
                 <div className="link w-100">
-                  <div className="image text-center float-left"><img src="./linkedin.svg" /></div>
+                  <div className="image text-center float-left"><img src="./linkedin.svg" alt=""/></div>
                   {(myself.linkedin_profile && this._renderSocialMedia(myself.linkedin_profile, true)) || <span className="small text-muted">No LinkedIn</span>}
                 </div>
               </div>
@@ -137,7 +137,7 @@ class MyAccount extends Component {
             <div className="col-lg-4 col-sm-12">
               <div className="session-block text-center">
                 <div className="image grad-orange">
-                  <img src="./trust-level.svg " />
+                  <img src="./trust-level.svg " alt=""/>
                 </div>
                 <h4>Trust Level</h4>
                 <span className="number">0</span>
@@ -146,7 +146,7 @@ class MyAccount extends Component {
             <div className="col-lg-4 col-sm-12">
               <div className="session-block text-center">
                 <div className="image grad-purple">
-                  <img src="./deals-completed.svg " />
+                  <img src="./deals-completed.svg " alt=""/>
                 </div>
                 <h4>Deals Completed</h4>
                 <span className="number">0</span>
@@ -155,7 +155,7 @@ class MyAccount extends Component {
             <div className="col-lg-4 col-sm-12">
               <div className="session-block text-center">
                 <div className="image grad-yellow">
-                  <img src="./on-going-deals.svg " />
+                  <img src="./on-going-deals.svg " alt=""/>
                 </div>
                 <h4>On Going Deals</h4>
                 <span className="number">0</span>

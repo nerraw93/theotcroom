@@ -29,11 +29,11 @@ const DefaultLayout = ({ children, ...rest }) => {
     let addIdMain = true;
     let fullWIdth = false;
 
-    if (path == '/me/settings') {
+    if (path === '/me/settings') {
         addIdMain = false;
     }
 
-    if (path == '/me/dashboard') {
+    if (path === '/me/dashboard') {
         fullWIdth = true;
     }
 
@@ -67,7 +67,7 @@ class AppContainer extends Component {
 
         if (this.props.myself) {
             let {is_admin} = this.props.myself;
-            Dashboard = is_admin == "1" ? AdminDashboard : UserDashboard;
+            Dashboard = is_admin === "1" ? AdminDashboard : UserDashboard;
         }
 
 
@@ -84,9 +84,9 @@ class AppContainer extends Component {
                     <DefaultRoute exact path="/me/order" component={userIsNotAuthenticated(BrowseOrders)}/>
                     <DefaultRoute exact path="/order/new" component={userIsNotAuthenticated(Ico)}/>
 
-                    /**
+                    {/**
                      * Public routes 
-                     */
+                    */}
                     <DefaultRoute exact path="/order/:id" component={Order}/>
                 </Switch>
             </BrowserRouter>

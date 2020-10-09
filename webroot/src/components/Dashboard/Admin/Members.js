@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import User from "../Members/User";
 import Loading2 from "../../common/Loading2";
 import ConfirmDialog from "../../common/ConfirmDialog";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { debounce } from "lodash";
 import DetailsModal from "../Members/DetailsModal";
 
@@ -100,7 +100,7 @@ export default class Members extends Component {
             return <Loading2 />
         }
 
-        if (users.length == 0)
+        if (users.length === 0)
             return (<div className="col-12 app-message"><h4 className="text-info">Nothing found.</h4></div>)
         return users.map(user => {
             return (
@@ -201,13 +201,13 @@ export default class Members extends Component {
                 <div className="col-12 pl-0 pr-0">
                     <ul className="app-nav nav">
                         <li className="nav-item" onClick={() => this._filterUser('all')}>
-                            <span className={`nav-link ${filter == 'all' ? 'active' : ''}`}>All Members ({all})</span>
+                            <span className={`nav-link ${filter === 'all' ? 'active' : ''}`}>All Members ({all})</span>
                         </li>
                         <li className="nav-item" onClick={() => this._filterUser('recent')}>
-                            <span className={`nav-link ${filter == 'recent' ? 'active' : ''}`}>Recent Members ({recent})</span>
+                            <span className={`nav-link ${filter === 'recent' ? 'active' : ''}`}>Recent Members ({recent})</span>
                         </li>
                         <li className="nav-item" onClick={() => this._filterUser('banned')}>
-                            <span className={`nav-link ${filter == 'banned' ? 'active' : ''}`}>Banned Members ({banned})</span>
+                            <span className={`nav-link ${filter === 'banned' ? 'active' : ''}`}>Banned Members ({banned})</span>
                         </li>
                     </ul>
 

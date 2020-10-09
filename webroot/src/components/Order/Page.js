@@ -3,7 +3,7 @@ import Details from "./Details";
 import Loading from "../common/Loading";
 import Manager from "./Seller/Manager";
 import Info from "./Seller/Info";
-import Loading2 from "../common/Loading2";
+// import Loading2 from "../common/Loading2";
 import Closed from "./Closed";
 import { isUndefined } from "lodash"
 
@@ -37,10 +37,10 @@ export default class Page extends Component {
 
     componentDidUpdate(prevProps) {
         const { icoDetails, myself } = this.props;
-        const { processing, error, success } = icoDetails
+        const { processing, error } = icoDetails
 
         if (myself) {
-            if (myself.id != prevProps.myself.id) {
+            if (myself.id !== prevProps.myself.id) {
                 this.setState({ myself, isGuest: false });
             }
         }
@@ -54,7 +54,7 @@ export default class Page extends Component {
 
         }
 
-        if (icoDetails.data != prevProps.icoDetails.data) {
+        if (icoDetails.data !== prevProps.icoDetails.data) {
             this.setState({ ico: icoDetails.data })
             // Check if this is the isOwner
             this._checkThisUserIsTheOwner()
@@ -99,7 +99,7 @@ export default class Page extends Component {
                             <p className="lead"></p>
                             <hr className="my-4" />
                             {hideExtraDetails ? null : <p>Contact administrator if something is wrong.</p>}
-                            {hideExtraDetails ? null : <a className="btn btn-primary btn-lg" href="#" role="button">Contact Us</a> }
+                            {hideExtraDetails ? null : <a className="btn btn-primary btn-lg" href="#/" role="button">Contact Us</a> }
                         </div>
                     </div>
                 </div>
@@ -108,13 +108,13 @@ export default class Page extends Component {
     }
 
     _renderOrderPage() {
-        const { ico, myself, isOwner, isLoading, isGuest, orderIsDisabled } = this.state;
+        const { ico, myself, isOwner, isGuest, orderIsDisabled } = this.state;
         let icoDetails;
 
         if (!ico) {
             return <Loading />;
         } else {
-            if (ico.is_visible == 1) {
+            if (ico.is_visible === 1) {
                 icoDetails = <Details ico={ico} isGuest={isGuest}
                     myself={myself} {...this.props}
                     isOwner={isOwner} />;
@@ -137,7 +137,8 @@ export default class Page extends Component {
     }
 
     render() {
-        const { ico, myself, isOwner, isLoading, isGuest, orderIsDisabled } = this.state;
+        // const { ico, myself, isOwner, isLoading, isGuest, orderIsDisabled } = this.state;
+        const { isOwner, orderIsDisabled } = this.state;
 
         if (orderIsDisabled && !isOwner) {
             return this._renderDisabledOrder();

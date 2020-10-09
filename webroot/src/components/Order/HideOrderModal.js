@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Modal from "react-bootstrap4-modal";
-import cx from "classnames";
-import Loading2 from "../common/Loading2";
+// import cx from "classnames";
+// import Loading2 from "../common/Loading2";
 
 class HideOrderModal extends Component {
 
@@ -68,7 +68,7 @@ class HideOrderModal extends Component {
             }
 
         render() {
-            const { show, className } = this.state;
+            const { show } = this.state;
             return (
                 <Modal className="modal" visible={show}>
                     <div className="modal-header col-lg-12 p-0">

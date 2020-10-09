@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {merge} from 'lodash';
+// import {merge} from 'lodash';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default class ResetPassword extends Component {
@@ -55,7 +55,7 @@ export default class ResetPassword extends Component {
             <div className="row">
                 <div className="col-xs-12">
                     <div className="media">
-                        <img className="mr-3" src="/forgot-password.svg" alt="Generic placeholder image" />
+                        <img className="mr-3" src="/forgot-password.svg" alt="Generic placeholder" />
                         <div className="media-body">
                             <form>
                             <h2 className="mt-1">Reset Password</h2>

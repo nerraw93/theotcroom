@@ -6,7 +6,7 @@ export default class Closed extends BaseModal {
 
         return (
             <div className="confirm-modal text-center">
-                <img src="/login-lock.svg"/>
+                <img src="/login-lock.svg" alt=""/>
                 <h3>Oops!</h3>
                 <p>
                 This page was been disabled. Please contact admins.

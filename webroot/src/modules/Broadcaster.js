@@ -1,6 +1,6 @@
 import Echo from "laravel-echo";
 import { merge } from 'lodash';
-import Pusher from 'pusher-js';
+// import Pusher from 'pusher-js';
 import StoreAccessor from "./StoreAccessor";
 import { getNotifications } from "../actions/notification";
 

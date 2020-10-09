@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import _ from "lodash";
+// import _ from "lodash";
 import Comment from "../Comment/Comment";
 import RegisterModal from "../../Home/RegisterModal";
-import { merge, isEmpty } from "lodash";
+import { isEmpty } from "lodash";
 import PropTypes from "prop-types";
 import ConfirmDialog from "../../common/ConfirmDialog";
 import { Button } from "../../common/Button";
@@ -24,7 +24,7 @@ export default class Viewer extends Component {
     }
 
     componentDidMount() {
-        const { reservation, myself, match: { params } } = this.props;
+        const { reservation } = this.props;
 
         if (!isEmpty(reservation)) {
             // This user already has reservation
@@ -84,22 +84,22 @@ export default class Viewer extends Component {
         }
 
         // Check reservation `status`
-        if (status == 'denied') {
+        if (status === 'denied') {
             // Reservation is `denied`
             return <Denied reservation={reservation} />
-        } else if (status == 'accepted') {
+        } else if (status === 'accepted') {
             // Reservation is `accepted`
             return <div>
                 <Accepted reservation={reservation} />
                 <Comment {...this.props}/>
             </div>;
-        } else if (status == 'ongoing') {
+        } else if (status === 'ongoing') {
             // Reservation is `ongoing`
             return <div>
                 <button className="btn btn-blue" disabled>YOU GOT THIS</button>
                 <Comment {...this.props}/>
             </div>
-        } else if (status == 'completed') {
+        } else if (status === 'completed') {
             // Reservation is `completed`
             return <div>
                 <Completed reservation={reservation} />

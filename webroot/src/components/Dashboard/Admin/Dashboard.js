@@ -5,9 +5,9 @@ import Orders from "./Orders";
 import Members from "./Members";
 
 export default class Dashboard extends Component {
-    constructor(props) {
-        super(props);
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
 
     render() {
 

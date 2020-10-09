@@ -41,9 +41,9 @@ class FlashMessage extends Component {
     render() {
         const { hide } = this.state;
         let { flashMessage: { message, type } } = this.props;
-        if (type == 'error')
+        if (type === 'error')
         type = 'danger'
-        if (type == '' || type == undefined)
+        if (type === '' || type === undefined)
         type = 'info'
         const alertClass = `text-left alert alert-${type}`;
 
